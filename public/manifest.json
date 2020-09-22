@@ -1,0 +1,26 @@
+{
+  "short_name": "HomeBookkeeping",
+  "name": "Home Bookkeeping",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "description": "Home Bookkeeping",
+  "theme_color": "#4a148c",
+  "background_color": "#ffffff"
+}

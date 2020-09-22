@@ -1,0 +1,57 @@
+{
+  "name": "homebookkeeping",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "firebase": "^7.19.1",
+    "materialize-css": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-firebaseui": "^4.1.0",
+    "react-materialize": "^3.9.3",
+    "react-paginate": "^6.5.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-paginate": "^6.2.1",
+    "@types/react-router-dom": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "rules": {
+      "react/prop-types": "off",
+      "react/forbid-prop-types": 0
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
