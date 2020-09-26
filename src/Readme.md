@@ -1,4 +1,5 @@
 > Home Bookkeeping
+##### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 #### Visit on web
 [bookkeeping-home.web.app](https://bookkeeping-home.web.app/)
 #### Try locally
@@ -15,7 +16,7 @@ yarn && yarn start
 - typescript
 - firebase (firestore, cloud storage, hosting)
 
-#### Features
+#### For future
 - add store
 - add locale
 - add charts
