@@ -1,0 +1,282 @@
+@import '~materialize-css/sass/components/color-variables';
+$secondary-color: color('purple', 'darken-4') !default;
+@import '~materialize-css/sass/materialize';
+
+$main_color: $secondary-color !default;
+$link-active-color: #bcaaa4 !default;
+$page-border-color: #000000 !default;
+
+.app-page {
+  padding: 2rem;
+}
+
+.app-main-layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-sidenav {
+  padding-top: 5px;
+  position: absolute;
+  top: 64px;
+  width: 250px;
+  transition: transform .3s;
+  bottom: 0;
+  height: auto;
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  padding: 0 2rem;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left > a {
+  margin-right: 1rem;
+}
+
+.app-content {
+  padding-top: 64px;
+  padding-left: 250px;
+  transition: padding-left .3s;
+  position: relative;
+  &.full {
+    padding-left: 0;
+  }
+}
+
+.sidenav li a {
+  &.active {
+    background-color: $link-active-color;
+    font-weight: 500;
+  }
+  &:hover {
+    background-color: transparentize($main_color, 0.5);
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+.avatar-small {
+  width: 24px;
+}
+
+.dropdown-content li > a > .avatar-small {
+  float: left;
+  margin: 0 24px 0 0;
+}
+
+.btn-dropdown {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  padding: 0 16px;
+}
+
+.text-wrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.page-title {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px transparentize($page-border-color, 0.7);
+  margin-bottom: 2rem;
+  h3, h4 {
+    margin: 0;
+    font-size: 2rem;
+  }
+}
+
+.app-loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.empty-layout {
+  height: 100vh;
+  padding: 2rem;
+}
+
+.input-field label {
+  height: 0;
+}
+
+.breadcrumb a {
+  &:before {
+    color: $main_color;
+    font-size: inherit;
+  }
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #4a148c !important;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+#toast-container {
+  top: 1rem;
+  right: 2rem;
+  left: unset;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.flex-container .file-path-wrapper {
+  display: none;
+}
+
+.flex-container .avatar-edited {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.flex-container .btn {
+  float: none;
+}
+
+.collection-item.numeric {
+  min-height: 84px;
+  padding-left: 72px;
+  position: relative;
+}
+
+.collection-item .amount {
+  font-size: 18px;
+}
+
+.collection-item.numeric .counter {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  left: 15px;
+  top: 25px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 42px;
+}
+
+.breadcrumb {
+  &:before {
+    color: $main_color;
+    vertical-align: middle;
+  }
+}
+
+.dropdown-content li:first-child a {
+  border-bottom: 1px solid transparentize($page-border-color, .7);
+}
+
+@media #{$medium-and-down} {
+  .app-content {
+    padding-left: 200px;
+  }
+  .app-sidenav {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app-sidenav {
+    position: absolute;
+  }
+  .app-content {
+    padding-left: 0;
+  }
+  .app-page {
+    padding: 1rem 1rem 3rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+  .nav-wrapper {
+    flex-direction: row-reverse;
+  }
+  .btn-dropdown {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .collection-item.numeric {
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+  .collection-item.numeric .counter {
+    left: 5px;
+    top: 20px;
+    font-size: 16px;
+  }
+  .collection-item .amount {
+    font-size: 16px;
+  }
+  .pagination li a {
+    font-size: 1rem;
+  }
+  .pagination li.previous, .pagination li.next {
+    width: 8%;
+  }
+  .pagination li.previous a, .pagination li.next a {
+    padding: 0;
+  }
+  .empty-layout {
+    padding: 1rem;
+  }
+}
+
+@media #{$small-and-down} {
+  .row .col.s12 {
+    padding: 0;
+  }
+  .row .col .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #toast-container {
+    top: unset;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}

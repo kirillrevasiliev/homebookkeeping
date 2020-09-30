@@ -11,8 +11,8 @@ import { publicRoutes, protectedRoutes } from './routes'
 import { useUserId } from './hooks/auth.hook'
 import { useUserData } from './hooks/userData.hook'
 import Loader from './components/app/Loader'
-import 'materialize-css'
-import './index.css'
+import 'materialize-css/dist/js/materialize.min'
+import './index.scss'
 
 declare const window: { [key: string]: any }
 window.M && window.M.AutoInit()
